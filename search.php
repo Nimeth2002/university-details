@@ -26,14 +26,14 @@ if ($result->num_rows > 0) {
            <th>Student Type</th>
            <th>Course Name</th>
            <th>Study Field</th>
-           <th>Location</th>
+           
          </tr>";
   while($row = $result->fetch_assoc()) {
     echo "<tr>
             <td>" . $row["university_name"] . "</td>
             <td>" . $row["student_type"] . "</td>
             <td>" . $row["course_name"] . "</td>
-            <td>" . $row["study_field"] . "</td>
+            
           </tr>";
   }
   echo "</table>";
